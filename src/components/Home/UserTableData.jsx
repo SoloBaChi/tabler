@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import DeleteIcon from '../icons/deleteIcon';
 
 const UserTableData = () => {
  const[userName,setUserName] = useState("");
@@ -32,12 +33,12 @@ const UserTableData = () => {
                     </td>
                     <td>Initial commit</td>
                     <td>May 16, 2018</td>
+                    <td><DeleteIcon/></td>
                 </tr>
                 <tr>
                     <td>
                         <div className="flex items-center gap-2">
                         <span className="icon-container overflow-hidden">
-                        {/* <img src={`/assets/user-profile.png`} alt="user" /> */}
                         BM
                         </span>
                         <span>Rusell Gibson</span>
@@ -45,6 +46,7 @@ const UserTableData = () => {
                     </td>
                     <td>Main structure</td>
                     <td>May 22, 2018</td>
+                    <td><DeleteIcon/></td>
                 </tr>
                 <tr>
                     <td>
@@ -57,6 +59,7 @@ const UserTableData = () => {
                     </td>
                     <td>Left side Adjustment</td>
                     <td>April 15, 2018</td>
+                    <td><DeleteIcon/></td>
                 </tr>
             </tbody>
         </table>

@@ -41,7 +41,6 @@ const NavBar = () => {
             </div>
 
             <div 
-              onClick={handleToggleMenu}
               className={`${toggleMenu ? "block" : "hidden"} 
               flex-item md:block top-0 right-0 fixed md:static w-full md:w-auto bg-white z-30 h-screen md:h-auto `
               }
@@ -49,11 +48,11 @@ const NavBar = () => {
                 <div className="flex relative py-16 px-2 md:p-0 justify-end md:justify-star gap-x-8 items-center">
                     <span 
                     onClick={handleToggleMenu}
-                    className='close-icon inline-block align-middle md:hidden absolute top-4 left-4 cursor-pointer border border-gray-700 rounded-[50%]'>
+                    className='close-icon inline-block align-middle md:hidden absolute top-4 z-40 left-4 cursor-pointer border border-gray-700 rounded-[50%]'>
                         <CloseIcon/>
                     </span>
                     <div className="flex-item">
-                        <button className='inline-block border border-blue-500 p-2 rounded-[4px] text-blue-500'>Source code</button>
+                        <button className='inline-block text-[0.875rem] md:text-[1rem] border border-blue-500 p-2 rounded-[4px] text-blue-500'>Source code</button>
                     </div>
                     <div className="flex-item relative">
                         <NotificationIcon/>
