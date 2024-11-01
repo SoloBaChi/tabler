@@ -38,7 +38,7 @@ const NavBar = () => {
         </div>
     </section>
     <hr/>
-    <SubNavLinks/>
+    {/* <SubNavLinks/> */}
    </>
   )
 }

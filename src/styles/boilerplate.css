@@ -100,7 +100,6 @@ Default Class Styles across all pages
   }
   h5 {
     font-size: 1rem;
-    font-weight: 400;
   }
   
   img {
@@ -247,9 +246,7 @@ Default Class Styles across all pages
     h4 {
       font-size: 2.5rem;
     }
-    h5{
-    font-size:1.5rem;
-    }
+    
     a,
     p {
       font-size: 1rem;

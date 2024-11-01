@@ -2,3 +2,36 @@
 
 
 @import url("boilerplate.css");
+
+
+table{
+/* border:1px solid red; */
+}
+td,th,td{
+padding:0.7rem;
+font-size:0.8754rem;
+}
+table .icon-container{
+height:38px;
+width:38px;
+border-radius:50%;
+background:#f2f2f2;
+text-align:center;
+line-height:38px;
+}
+.icon-container + span{
+font-size:0.8754rem;
+}
+.table-container{
+width:480px;
+}
+table{
+width:980px;
+}
+.purchase-container::-webkit-scrollbar{
+height:4px;
+width:10px;
+}
+.purchase-container::-webkit-scrollbar-thumb{
+background:#0088FE;
+}
