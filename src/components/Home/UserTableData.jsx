@@ -13,7 +13,7 @@ const UserTableData = () => {
     },[])
   return (
     <div className='table-container'>
-        <table className='w-full'>
+        <table className='w-[100%]'>
             <thead>
                 <tr>
                     <th className='font-[500] p-4 text-left'>USER</th>

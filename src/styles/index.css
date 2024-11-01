@@ -42,3 +42,10 @@ background:#f8f8f8;
 span.active svg{
 fill:#0088FE;
 }
+
+
+@media(min-width:768px){
+.table-container{
+ width:100%;
+}
+}

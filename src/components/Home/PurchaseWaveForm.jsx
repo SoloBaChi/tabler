@@ -15,7 +15,7 @@ const PurchasesWaveformChart = () => {
 
   return (
     <div style={{ width: '100%', height: 300 }}>
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 p-4">
       <span className='inline-block h-[15px] w-[15px] bg-[#0088FE]'></span>
       <h2 style={{ textAlign: 'left',fontSize:"16px" }}>Purchases</h2>
       </div>
