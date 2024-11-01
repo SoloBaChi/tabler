@@ -28,10 +28,14 @@ width:480px;
 table{
 width:980px;
 }
+.tab-container::-webkit-scrollbar,
 .purchase-container::-webkit-scrollbar{
 height:4px;
 width:10px;
 }
 .purchase-container::-webkit-scrollbar-thumb{
 background:#0088FE;
+}
+.tab-container::-webkit-scrollbar-thumb{
+background:#f8f8f8;
 }
