@@ -4,6 +4,7 @@ import PieChartView from './PieChart';
 import DoughnutPieView from './DoughnutChat';
 import PurchasesWaveformChart from './PurchaseWaveForm';
 import UserTableData from './UserTableData';
+import Header from '../Header/Header';
 
 const Home = () => {
  const cardData = [
@@ -39,6 +40,8 @@ const Home = () => {
   },
  ];
   return (
+     <>
+      <Header/>
     <section className='bg-[#f5f7fb] border border-gray-200'>
        <div className="mb-8">
        <h4 className='text-[1.2rem] text-gray-900 my-8'>Dashboard</h4>
@@ -83,6 +86,7 @@ const Home = () => {
         </div>
        </div>
     </section>
+    </>
   )
 }
 

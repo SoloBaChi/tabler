@@ -1,15 +1,15 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './Home/Home';
-import Header from './Header/Header';
+import AdminLogin from './AdminLogin';
 
 
 const Main = () => {
   return (
   <Router>
-     <Header/>
     <Routes>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/' element={<AdminLogin/>}/>
+        <Route path='dashboard' element={<Home/>}/>
     </Routes>
   </Router>
   )

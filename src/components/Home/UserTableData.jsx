@@ -1,6 +1,15 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const UserTableData = () => {
+ const[userName,setUserName] = useState("");
+
+    useEffect(()=>{
+        const fetchUserName = () => {
+         const username = localStorage.getItem("admin_name");
+         setUserName(username)
+        }
+        fetchUserName()
+    },[])
   return (
     <div className='table-container'>
         <table className='w-full'>
@@ -15,10 +24,10 @@ const UserTableData = () => {
                 <tr>
                     <td>
                         <div className="flex items-center gap-2">
-                        <span className="icon-container">
+                        <span className="icon-container overflow-hidden">
                         <img src={`/assets/user-profile.png`} alt="user" />
                         </span>
-                        <span>Ronald Bradley</span>
+                        <span className='capitalize'>{userName}</span>
                         </div>
                     </td>
                     <td>Initial commit</td>
@@ -27,7 +36,7 @@ const UserTableData = () => {
                 <tr>
                     <td>
                         <div className="flex items-center gap-2">
-                        <span className="icon-container">
+                        <span className="icon-container overflow-hidden">
                         {/* <img src={`/assets/user-profile.png`} alt="user" /> */}
                         BM
                         </span>
@@ -40,10 +49,10 @@ const UserTableData = () => {
                 <tr>
                     <td>
                         <div className="flex items-center gap-2">
-                        <span className="icon-container">
-                        <img src={`/assets/user-profile.png`} alt="user" />
+                        <span className="icon-container overflow-hidden">
+                        <img src={`/assets/profile-image.jpg`} alt="user" />
                         </span>
-                        <span>Bervely Armstrong</span>
+                        <span>Solomon Joboson</span>
                         </div>
                     </td>
                     <td>Left side Adjustment</td>
