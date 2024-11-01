@@ -1,0 +1,303 @@
+/* ====================================
+Default Class Styles across all pages
+======================================= */
+
+:root {
+    --btn-border: 1px solid #79747e;
+    --dark-color: #0c1219;
+    --frame-color: #d1d2e7;
+    --text-black: #1e1f22;
+    --black-color: #1e1f22;
+    --grey-text:#808080;
+    --grey-color:#808080;
+    --grey-bg:#A9A9A9;
+    --white-color: #ffffff;
+    --white-bg: #ffffff;
+    --primary-btn:#2B6CB0;
+    --primary-color:#2b6cb0;
+    --light-blue:#1e90ff;
+    --secondary-btn:#FFD700;
+    --secondary-color:#FFD700;
+    --footer-bg:#1A202C;
+    --deep-blue:#1A202C;
+    --light-grey:#E2E8F0;
+    --red-color:#E53E3E;
+    --teal-color:#319795;
+    --green-color:#38A169;
+    /* font sizes */
+    --xs-font:0.4rem; 
+    --sm-font:0.875rem;
+    --md-font:1rem;
+    --lg-font:1.4rem;
+    --xl-font:2.5rem;
+   
+  }
+  
+  html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  *::selection {
+    background: #3a8d97;
+    color: #fff;
+  }
+  ::placeholder {
+    font-size: 1rem;
+  }
+  a {
+    text-decoration: none;
+    display: block;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins",sans-serif;
+    background:var(--white-bg);
+    background:var(--white-color);
+    color: var(--grey-text);
+    counter-reset: count;
+    overflow-x: hidden;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Poppins",sans-serif;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight:800;
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    /* line-height: 100%; */
+    line-height:1.5;
+    color:var(--light-grey);
+  }
+  h2 {
+    font-size: 2.5rem;
+    font-weight:600;
+  }
+  h3 {
+    font-size: 2rem;
+    /* color:var(--primary-color); */
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  img {
+    display: block;
+    border-radius: inherit;
+    width: 100%;
+  }
+  .img-container {
+    /* display: inline-block;
+  margin: 0 auto; */
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  p {
+    font-size: 0.875rem;
+    line-height:1.8;
+  }
+  section {
+    padding: 0.5rem 5%;
+  }
+ 
+  
+  
+  
+  
+  .btn-container {
+    text-align: center;
+  }
+  .btn-container .cta-btn {
+    display: inline-block;
+    border-radius:25px;
+    padding: 12px 24px;
+    color: var(--dark-color);
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+  .cta-btn {
+    text-align: center;
+  }
+  
+  /* =========================
+  Form element Stykes
+  ============================= 
+  */
+  .form-container .double {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 4%;
+  }
+  .form-container .double > * {
+    flex-basis: 48%;
+  }
+  .form-field {
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 1.2rem;
+  }
+  .form-field label {
+    text-transform: capitalize;
+    margin-bottom: 0.45rem;
+    font-weight: 400;
+    display: block;
+  }
+  .form-field input,
+  .form-field textarea,
+  .form-field select{
+    width: 100%;
+    padding: 1rem;
+    border-radius:4px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    font-size:1rem;
+  }
+  input[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+  }
+  .form-field .eye-icon-container,
+  .form-field .icon-container {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, 10%);
+    right: 15px;
+    cursor: pointer;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    
+  }
+  .form-field .eye-icon-container.active svg path {
+    stroke:var(--primary-btn);
+  }
+  
+  /* ==============Message info============ */
+  .form-container .error-message {
+    color: #f00;
+    font-size: 0.875rem;
+  }
+  /*============ Flex and Grid Items================ */
+  .grid-container-2 > *,
+  .grid-container-3 > *,
+  .flex-container-2 > *,
+  .flex-container-4 > * {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Custom font class */
+
+  
+  /* SPINNER STYLES */
+  .spinner {
+    animation: spin 1s linear infinite;
+    display: inline-block;
+  }
+
+  .spin-container svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* ==========================
+  For Desktop Device
+  =============================*/
+  @media (min-width: 980px) {
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 3.5rem;
+    }
+    h3 {
+      font-size: 3rem;
+    }
+    h4 {
+      font-size: 2.5rem;
+    }
+    h5{
+    font-size:1.5rem;
+    }
+    a,
+    p {
+      font-size: 1rem;
+    }
+
+    section {
+      padding: 0.5rem 7%;
+    }
+    .flex-container-4,
+    .flex-container-2 {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      gap: 4%;
+    }
+    .flex-container-4 {
+      align-items: flex-start;
+    }
+    .flex-container-2 > * {
+      flex-basis: 48%;
+    }
+    .flex-container-4 > * {
+      flex-basis: 22%;
+    }
+    .grid-container-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.4rem;
+    }
+    .grid-container-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      /* place-items: center; */
+    }
+    .flex-container-2 > *,
+    .flex-container-4 > *,
+    .grid-container-3 > *,
+    .grid-container-2 > * {
+      margin-bottom: 0;
+    }
+  }
+  
+  /* ==========================
+  Large Desktop Device
+  ==============================*/
+  @media (min-width: 1200px) {
+    h6 {
+      font-size: 1.25rem;
+    }
+  }
+  
