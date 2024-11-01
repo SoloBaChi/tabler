@@ -1,43 +1,50 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import TabSelector from '../TabSelector/TabSelector'
+import HomeIcon from '../icons/HomeIcon'
+import InterfaceIcon from '../icons/InterfaceIcon'
+import ComponentsIcon from '../icons/ComponentsIcon'
+import PageIcon from '../icons/PageIcon'
+import FormIcon from '../icons/FormIcon'
+import GalleryIcon from '../icons/GalleryIcon'
+import DocumentationIcon from '../icons/DocumentationIcon'
 
 const SubNavLinks = () => {
     const subLinks  = [
         {
          id:"home",
          title:"Home",
-         icon:""
+         icon:<HomeIcon/>
         },
         {
          id:"interface",
          title:"Interface",
-         icon:""
+         icon:<InterfaceIcon/>
         },
         {
          id:"components",
          title:"Components",
-         icon:""
+         icon:<ComponentsIcon/>
         },
         {
          id:"pages",
          title:"Pages",
-         icon:""
+         icon:<PageIcon/>
         },
         {
          id:"form",
          title:"Form",
-         icon:""
+         icon:<FormIcon/>
         },
         {
          id:"gallery",
          title:"Gallery",
-         icon:""
+         icon:<GalleryIcon/>
         },
         {
          id:"documentation",
          title:"Documentation",
-         icon:""
+         icon:<DocumentationIcon/>
         },
 
     ]

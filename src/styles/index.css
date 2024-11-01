@@ -39,3 +39,6 @@ background:#0088FE;
 .tab-container::-webkit-scrollbar-thumb{
 background:#f8f8f8;
 }
+span.active svg{
+fill:#0088FE;
+}
